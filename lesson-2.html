@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Drupal Architecture course | Open Drupal</title>
+
+		<link rel="stylesheet" href="slide-foundation/node_modules/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="slide-foundation/css/open-drupal.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="slide-foundation/node_modules/reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'slide-foundation/node_modules/reveal.js/css/print/pdf.css' : 'slide-foundation/node_modules/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-markdown="lesson-2/slides/00-title.md">
+        </section>
+        <section data-markdown="lesson-1/slides/01-outline.md"
+                 data-separator-vertical="^\n--vv--\n">
+        </section>
+        <section data-markdown="lesson-2/slides/10-menu.md"
+                 data-separator-vertical="^\n--vv--\n">
+        </section>
+        <section data-markdown="lesson-2/slides/20-images.md"
+                 data-separator-vertical="^\n--vv--\n">
+        </section>
+        <section data-markdown="lesson-2/slides/30-search.md"
+                 data-separator-vertical="^\n--vv--\n">
+        </section>
+        <section data-markdown="lesson-2/slides/40-forms.md"
+                 data-separator-vertical="^\n--vv--\n">
+        </section>
+        <section data-markdown="lesson-2/slides/50-editor.md"
+                 data-separator-vertical="^\n--vv--\n">
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            # License
+            
+            This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+          </script>
+        </section>
+			</div>
+		</div>
+
+		<script src="slide-foundation/node_modules/reveal.js/lib/js/head.min.js"></script>
+		<script src="slide-foundation/node_modules/reveal.js/js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'slide-foundation/node_modules/reveal.js/plugin/markdown/marked.js' },
+					{ src: 'slide-foundation/node_modules/reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'slide-foundation/node_modules/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'slide-foundation/node_modules/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				],
+				history: true,
+				controlsTutorial: false,
+				transition: 'none',
+				backgroundTransition: 'none',
+			});
+		</script>
+	</body>
+</html>

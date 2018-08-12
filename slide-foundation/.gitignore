@@ -1,0 +1,3 @@
+# Ignore all node packages, except the packages to show the slides.
+node_modules/*
+!node_modules/reveal.js/

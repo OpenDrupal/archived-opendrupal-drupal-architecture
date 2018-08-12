@@ -1,0 +1,30 @@
+{
+  "name": "od-course-template-slide-foundation",
+  "version": "1.0.0",
+  "description": "Open Drupal slide foundation",
+  "main": "readme.md",
+  "dependencies": {
+    "reveal.js": "^3.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenDrupal/od-course-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OpenDrupal/od-course-template/issues"
+  },
+  "homepage": "https://github.com/OpenDrupal/od-course-template#readme"
+}
