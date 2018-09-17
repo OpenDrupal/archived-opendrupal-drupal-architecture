@@ -73,14 +73,14 @@ Other CMS-es
 
 # The Drupal way
 ![Architecture step: Dispay](lesson-1/slides/images/steps---d--.png)<!-- .element: style="width: 100%;" -->
-![The Drupal way: Dislay](lesson-1/slides/images/drupal-way-3.png)<!-- .element: style="width: 60%;" -->
+![The Drupal way: Dislay](lesson-1/slides/images/drupal-way-3.png)<!-- .element: style="width: 55%;" -->
 
 --vv--
 
 # The Drupal way
 ![Architecture step: Content + Dispay](lesson-1/slides/images/steps--cd--.png)<!-- .element: style="width: 100%;" -->
-![The Drupal way: Content + Dispay](lesson-1/slides/images/drupal-way-4.png)<!-- .element: style="width: 40%;" -->
-![The Drupal way: Content + Dispay](lesson-1/slides/images/drupal-way-5.png)<!-- .element: style="width: 40%;" -->
+![The Drupal way: Content + Dispay](lesson-1/slides/images/drupal-way-4.png)<!-- .element: style="width: 25%;" -->
+![The Drupal way: Content + Dispay](lesson-1/slides/images/drupal-way-5.png)<!-- .element: style="width: 15%;" -->
 
 --vv--
 

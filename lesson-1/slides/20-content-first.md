@@ -26,6 +26,12 @@ Node types and other content
   - Combination of fields (= content).
   - Access to content (editor + visitor).
   - Clean structure of the content model.
+
+--vv--
+
+# Content first!
+![Architecture step: Content + Display](lesson-1/slides/images/steps--cd--.png)<!-- .element: style="width: 100%;" -->
+
 - Choose fields based on
   - Type of content.
   - Access to the field (editor + visitor).
