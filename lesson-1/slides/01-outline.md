@@ -3,6 +3,8 @@
 --vv--
 
 # Outline
+<!-- .slide: class="layout-two-col"-->
+
 - [Lesson 1](lesson-1.html)
   - Drupal site architecture
   - Content first
