@@ -2,5 +2,187 @@
 @import "../../node_modules/reveal.js/css/theme/template/mixins";
 @import "../../node_modules/reveal.js/css/theme/template/settings";
 
-// For now, use the white theme.
-@import "../../node_modules/reveal.js/css/theme/source/white"
+// Include theme-specific fonts
+@import "../assets/font/source-sans-pro/source-sans-pro.css";
+@import "../assets/font/ubuntu-font-family/ubuntu-font-family.css";
+
+// Drupal colours
+$c-drupal-blue-dark: #0678BE;
+$c-drupal-blue-light: #53B0EB;
+$c-drupal-yellow-light: #E6FCB6;
+$c-drupal-orange: #FFE69F;
+$c-drupal-green: #D4EFCC;
+$c-drupal-green-lime: #96BC44;
+$c-drupal-red: #EBCCCC;
+
+// Grayscale colours
+$c-off-black: #333;
+$c-white: white;
+$c-black: black;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: $c-off-black;
+$headingColor: $c-off-black;
+
+$mainFontSize: 36px;
+$mainFont: 'Ubuntu', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: $c-drupal-blue-dark;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.0em;
+$heading2Size: 1.3em;
+$heading3Size: 1.1em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: $c-white;
+	}
+}
+
+// Theme template ------------------------------
+@import "../../node_modules/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+.reveal {
+
+  .copyright {
+    position: fixed;
+    height: 26px;
+    width: 100%;
+    bottom: 3px;
+    left: 0;
+    z-index: 1;
+    font-size: 40%;
+    line-height: 26px;
+    text-align: left;
+    background-color: $c-drupal-blue-light;
+
+    img {
+      vertical-align: middle;
+    }
+
+    .logo {
+      padding: 0 10px;
+      margin-top: -4px;
+      height: 18px;
+    }
+
+    .license {
+      float: right;
+    }
+  }
+
+  .controls {
+    bottom: 30px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .slide-background {
+      background: $c-white;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $c-drupal-blue-dark;
+    text-shadow: 0px 1px 0px darken($c-drupal-blue-dark, 10%);
+    text-transform: none;
+  }
+
+  a {
+    color: $c-drupal-blue-dark;
+    text-decoration: underline dotted transparentize($c-drupal-blue-light, 0.3);
+    transition: 0.2s;
+
+    &:hover {
+      text-decoration: underline $c-drupal-blue-dark;
+      color: $c-drupal-blue-dark;
+      transition: 0.2s;
+    }
+  }
+
+  blockquote {
+    background: $c-drupal-yellow-light;
+    border: 2px solid darken($c-drupal-yellow-light, 10%);
+    color: transparentize($c-off-black, 0.1);
+    font-size: 90%;
+  }
+
+  // Some classes if you want to use custom HTML in your markdown
+  .green-text {
+    background: $c-drupal-green;
+    padding: 12px 16px;
+    border-left: 8px solid darken($c-drupal-green, 20%);
+    border-radius: 4px;
+  }
+
+  .red-text {
+    background: $c-drupal-red;
+    padding: 12px 16px;
+    border-left: 8px solid darken($c-drupal-red, 20%);
+    border-radius: 4px;
+  }
+
+  .progress {
+    height: 5px;
+  }
+
+  .controls-arrow {
+    color: $c-drupal-blue-dark;
+  }
+
+  section {
+
+    img {
+      border-width: 0;
+      box-shadow: none;
+    }
+
+    &.layout-title-page {
+      p {
+        font-size: $heading2Size;
+      }
+    }
+
+    &.layout-two-col {
+      ul, p > ul {
+        column-count: 2;
+        column-gap: 2em;
+      }
+
+      ul > li > ul,
+      ul > ol > ul {
+        column-count: 1;
+      }
+    }
+
+    &.layout-three-col {
+      ul, p > ul {
+        column-count: 3;
+        column-gap: 2em;
+      }
+
+      ul > li > ul,
+      ul > ol > ul {
+        column-count: 1;
+      }
+    }
+
+    &.layout-two-col li,
+    &.layout-three-col li {
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+  }
+
+}
