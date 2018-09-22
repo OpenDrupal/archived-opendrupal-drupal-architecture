@@ -1,5 +1,5 @@
 # OpenDrupal Drupal Architecture course
-This course is part of the [Open Drupal curriculum](https://opendrupal.github.com).
+This course is part of the [Open Drupal curriculum](https://opendrupal.github.io).
 
 With Drupal you build your website by combining different modules to match the requirements of the project. With this
 course you lean strategies to use when building a Drupal site, how to select popular modules and how to combine them.
