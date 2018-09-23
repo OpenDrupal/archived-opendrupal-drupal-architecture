@@ -1,5 +1,5 @@
-# Open Drupal slide foundation
-A Reveal.js based package for slides with Open Drupal style. It includes the reveal.js package to allow on-line presentation of slides and immediate usage after downloading on any computer.
+# OpenDrupal slide foundation
+A Reveal.js based package for slides with OpenDrupal style. It includes the reveal.js package to allow on-line presentation of slides and immediate usage after downloading on any computer.
 
 ## Development
 Development works require Node and npm. See https://docs.npmjs.com/getting-started/installing-node
