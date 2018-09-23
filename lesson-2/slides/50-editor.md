@@ -25,6 +25,8 @@
 --vv--
 
 # Modules
+<!-- .slide: class="layout-two-col" -->
+
 - Admin overview pages
   - Views
   - Views Bulk Operations (partly in core)
