@@ -259,96 +259,85 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-.reveal .copyright {
-  position: fixed;
-  height: 26px;
-  width: 100%;
-  bottom: 3px;
-  left: 0;
-  z-index: 1;
-  font-size: 40%;
-  line-height: 26px;
-  text-align: left;
-  background-color: #53B0EB; }
-  .reveal .copyright img {
-    vertical-align: middle; }
-  .reveal .copyright .logo {
-    padding: 0 10px;
-    margin-top: -4px;
-    height: 18px; }
-  .reveal .copyright .license {
-    float: right; }
-
-.reveal .controls {
-  bottom: 30px; }
-
-@media screen and (max-width: 1500px) {
-  .reveal .slide-background {
-    background: white; } }
-
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
-  color: #0678BE;
-  text-shadow: 0px 1px 0px #04598d;
-  text-transform: none; }
-
-.reveal a {
-  color: #0678BE;
-  text-decoration: underline dotted rgba(83, 176, 235, 0.7);
-  transition: 0.2s; }
-  .reveal a:hover {
-    text-decoration: underline #0678BE;
+.reveal {
+  font-weight: normal; }
+  .reveal .footer {
+    height: 26px;
+    width: 100%;
+    bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    font-size: 40%;
+    line-height: 26px;
+    background-color: #53B0EB; }
+    .reveal .footer .logo {
+      margin: 0 10px;
+      height: 19px; }
+    .reveal .footer .course-name {
+      margin-right: 10px; }
+    .reveal .footer .license {
+      margin: 0 10px;
+      height: 19px; }
+      .reveal .footer .license img {
+        width: 90px; }
+  .reveal .controls {
+    bottom: 30px; }
+  @media screen and (max-width: 1500px) {
+    .reveal .slide-background {
+      background: white; } }
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     color: #0678BE;
+    text-shadow: 0px 1px 0px #04598d;
+    text-transform: none; }
+  .reveal a {
+    color: #0678BE;
+    text-decoration: underline dotted rgba(83, 176, 235, 0.7);
     transition: 0.2s; }
-
-.reveal blockquote {
-  background: #E6FCB6;
-  border: 2px solid #d5fa85;
-  color: rgba(51, 51, 51, 0.9);
-  font-size: 90%; }
-
-.reveal .green-text {
-  background: #D4EFCC;
-  padding: 12px 16px;
-  border-left: 8px solid #93d77e;
-  border-radius: 4px; }
-
-.reveal .red-text {
-  background: #EBCCCC;
-  padding: 12px 16px;
-  border-left: 8px solid #ce8383;
-  border-radius: 4px; }
-
-.reveal .progress {
-  height: 5px; }
-
-.reveal .controls-arrow {
-  color: #0678BE; }
-
-.reveal section img {
-  border-width: 0;
-  box-shadow: none; }
-
-.reveal section.layout-title-page p {
-  font-size: 1.3em; }
-
-.reveal section.layout-two-col ul, .reveal section.layout-two-col p > ul {
-  column-count: 2;
-  column-gap: 2em; }
-
-.reveal section.layout-two-col ul > li > ul,
-.reveal section.layout-two-col ul > ol > ul {
-  column-count: 1; }
-
-.reveal section.layout-three-col ul, .reveal section.layout-three-col p > ul {
-  column-count: 3;
-  column-gap: 2em; }
-
-.reveal section.layout-three-col ul > li > ul,
-.reveal section.layout-three-col ul > ol > ul {
-  column-count: 1; }
-
-.reveal section.layout-two-col li,
-.reveal section.layout-three-col li {
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid; }
+    .reveal a:hover {
+      text-decoration: underline #0678BE;
+      color: #0678BE;
+      transition: 0.2s; }
+  .reveal blockquote {
+    border: 2px solid #a8a8a8;
+    color: rgba(51, 51, 51, 0.9);
+    font-size: 90%; }
+  .reveal .green-text {
+    background: #D4EFCC;
+    padding: 12px 16px;
+    border-left: 8px solid #93d77e;
+    border-radius: 4px; }
+  .reveal .red-text {
+    background: #EBCCCC;
+    padding: 12px 16px;
+    border-left: 8px solid #ce8383;
+    border-radius: 4px; }
+  .reveal .progress {
+    height: 5px; }
+  .reveal .controls-arrow {
+    color: #0678BE; }
+  .reveal section img {
+    border-width: 0;
+    box-shadow: none; }
+  .reveal section.layout-title-page p {
+    font-size: 1.3em; }
+  .reveal section.layout-two-col ul, .reveal section.layout-two-col p > ul {
+    column-count: 2;
+    column-gap: 2em; }
+  .reveal section.layout-two-col ul > li > ul,
+  .reveal section.layout-two-col ul > ol > ul {
+    column-count: 1; }
+  .reveal section.layout-three-col ul, .reveal section.layout-three-col p > ul {
+    column-count: 3;
+    column-gap: 2em; }
+  .reveal section.layout-three-col ul > li > ul,
+  .reveal section.layout-three-col ul > ol > ul {
+    column-count: 1; }
+  .reveal section.layout-two-col li,
+  .reveal section.layout-three-col li {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }

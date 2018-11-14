@@ -17,6 +17,7 @@ $c-drupal-red: #EBCCCC;
 
 // Grayscale colours
 $c-off-black: #333;
+$c-gray-medium: #a8a8a8;
 $c-white: white;
 $c-black: black;
 
@@ -28,6 +29,7 @@ $headingColor: $c-off-black;
 
 $mainFontSize: 36px;
 $mainFont: 'Ubuntu', Helvetica, sans-serif;
+$mainFontWeight: normal;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
@@ -43,9 +45,9 @@ $heading3Size: 1.1em;
 $heading4Size: 1.0em;
 
 section.has-dark-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: $c-white;
-	}
+  &, h1, h2, h3, h4, h5, h6 {
+    color: $c-white;
+  }
 }
 
 // Theme template ------------------------------
@@ -53,31 +55,37 @@ section.has-dark-background {
 // ---------------------------------------------
 
 .reveal {
+  font-weight: $mainFontWeight;
 
-  .copyright {
-    position: fixed;
+  .footer {
     height: 26px;
     width: 100%;
     bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     left: 0;
     z-index: 1;
     font-size: 40%;
     line-height: 26px;
-    text-align: left;
     background-color: $c-drupal-blue-light;
 
-    img {
-      vertical-align: middle;
+    .logo {
+      margin: 0 10px;
+      height: 19px;
     }
 
-    .logo {
-      padding: 0 10px;
-      margin-top: -4px;
-      height: 18px;
+    .course-name {
+      margin-right: 10px;
     }
 
     .license {
-      float: right;
+      margin: 0 10px;
+      height: 19px;
+      img {
+        width: 90px;
+      }
     }
   }
 
@@ -110,8 +118,7 @@ section.has-dark-background {
   }
 
   blockquote {
-    background: $c-drupal-yellow-light;
-    border: 2px solid darken($c-drupal-yellow-light, 10%);
+    border: 2px solid $c-gray-medium;
     color: transparentize($c-off-black, 0.1);
     font-size: 90%;
   }
