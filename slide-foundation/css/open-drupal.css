@@ -319,6 +319,12 @@ body {
     height: 5px; }
   .reveal .controls-arrow {
     color: #0678BE; }
+  .reveal .slide-number {
+    right: 12px;
+    bottom: 30px;
+    font-size: 14px;
+    color: #0678BE;
+    background-color: transparent; }
   .reveal section img {
     border-width: 0;
     box-shadow: none; }

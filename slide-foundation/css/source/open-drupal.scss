@@ -146,6 +146,14 @@ section.has-dark-background {
     color: $c-drupal-blue-dark;
   }
 
+  .slide-number {
+   right: 12px;
+   bottom: 30px;
+   font-size: 14px;
+   color: $c-drupal-blue-dark;
+   background-color: transparent;
+  }
+
   section {
 
     img {
