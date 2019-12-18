@@ -1,21 +1,22 @@
-const gulp = require('gulp');  
-const sass = require('gulp-sass');  
+const { src, dest, series, watch } = require('gulp');
+const gulpSass = require('gulp-sass');  
 const browserSync = require('browser-sync');  
 
-gulp.task('sass', function () {  
-  gulp.src('css/source/*.scss')
-      .pipe(sass({includePaths: ['css/source']}))
-      .pipe(gulp.dest('css'));
-});
+function sass() {
+  return src('css/source/*.scss')
+    .pipe(gulpSass({includePaths: ['css/source']}))
+    .pipe(dest('css'));
+}
 
-gulp.task('browser-sync', function() {  
-  browserSync.init(["css/*.css"], {
-      server: {
-          baseDir: "../"
-      }
+function serve() {
+  browserSync.init( {
+    server: {
+      baseDir: "../"
+    }
   });
-});
 
-gulp.task('default', ['sass', 'browser-sync'], function () {  
-  gulp.watch("css/source/*.scss", ['sass']);
-});
+  watch("css/source/*.scss").on('change', series(sass, browserSync.reload));
+}
+
+exports.sass = sass;
+exports.default = serve;
