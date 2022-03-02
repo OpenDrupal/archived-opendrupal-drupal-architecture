@@ -4,7 +4,7 @@
   "description": "OpenDrupal slide foundation",
   "main": "readme.md",
   "dependencies": {
-    "reveal.js": "^3.9.2"
+    "reveal.js": "^4.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
