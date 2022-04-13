@@ -1,6 +1,6 @@
 # OpenDrupal Drupal Architecture course
 
-Combine Drupal core and contributed modules to build a Drupal website. Apply frequenlty used patterns to create the high level architecture of a Drupal website.
+Combine Drupal core and contributed modules to build a Drupal website. Apply frequenlty used patterns to create the high level architecture of a Drupal website. Suitable for drupal 9.
 
 View the slides on-line at https://opendrupal.github.io/opendrupal-drupal-architecture
 
