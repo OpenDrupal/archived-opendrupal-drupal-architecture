@@ -6,20 +6,10 @@
 
 		<title>Drupal Architecture course | OpenDrupal</title>
 
-		<link rel="stylesheet" href="slide-foundation/node_modules/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="slide-foundation/node_modules/reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="slide-foundation/node_modules/reveal.js/dist/reveal.css">
 		<link rel="stylesheet" href="slide-foundation/css/open-drupal.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="slide-foundation/node_modules/reveal.js/lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'slide-foundation/node_modules/reveal.js/css/print/pdf.css' : 'slide-foundation/node_modules/reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -52,21 +42,18 @@
       </footer>
 		</div>
 
-		<script src="slide-foundation/node_modules/reveal.js/lib/js/head.min.js"></script>
-		<script src="slide-foundation/node_modules/reveal.js/js/reveal.js"></script>
+		<script src="slide-foundation/node_modules/reveal.js/dist/reveal.js"></script>
+		<script src="slide-foundation/node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="slide-foundation/node_modules/reveal.js/plugin/notes/notes.js"></script>
+		<script src="slide-foundation/node_modules/reveal.js/plugin/highlight/highlight.js"></script>
 
 		<script>
 			Reveal.initialize({
-				dependencies: [
-					{ src: 'slide-foundation/node_modules/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'slide-foundation/node_modules/reveal.js/plugin/markdown/markdown.js' },
-					{ src: 'slide-foundation/node_modules/reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'slide-foundation/node_modules/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				],
 				history: true,
 				controlsTutorial: false,
 				transition: 'none',
 				backgroundTransition: 'none',
+				plugins: [ RevealNotes, RevealMarkdown, RevealHighlight ]
 			});
       Reveal.configure({ slideNumber: 'c' });
 		</script>
