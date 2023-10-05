@@ -7,7 +7,7 @@
     "reveal.js": "^4.3.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
+    "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0"
